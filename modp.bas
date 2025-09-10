@@ -1,7 +1,7 @@
 ' PicoCalc MOD Player by @Guidouil
 dim fname$(128,2)
 fcount=0
-sel=0:wl=15:id=0
+sel=0:wl=16:id=0
 black=rgb(0,0,0)
 w=MM.HRES
 h=MM.VRES
@@ -18,6 +18,7 @@ function fsz(f$)
  close #1
 end function
 
+intro()
 chdir "modfiles"
 listfiles()
 filesview()
@@ -42,8 +43,6 @@ end sub
 
 sub filesview()
 cls black
-
-
 if fcount=0 then
  cls green
  color black,green
@@ -56,16 +55,16 @@ else
 'show mod files
 do
  'window
-font 8,4
-fht=mm.info(fontheight)
-box 0,0,w,fht+10,2,green,grey
-color green,grey
-text w/2,6,"PicoCalc MOD Player",c
-box 0,fht+10,w,h,1,green
-font 8,2
-color black,green
-box 0,h-13,w,13,1,green,green
-text w/2,h-11,"ESC : Quit       ENTER or RIGHT : Play",c
+ font 8,4
+ fht=mm.info(fontheight)
+ box 0,0,w,fht+10,2,green,grey
+ color green,grey
+ text w/2,6,"PicoCalc MOD Player",c
+ box 0,fht+10,w,h,1,green
+ font 8,2
+ color black,green
+ box 0,h-13,w,13,1,green,green
+ text w/2,h-11,"ESC : Quit      ENTER or RIGHT : Play",c
  k$=inkey$
  ' ESC
  if k$=chr$(27) or k$="q" then
@@ -74,7 +73,7 @@ text w/2,h-11,"ESC : Quit       ENTER or RIGHT : Play",c
   end
  endif
  if fcount<wl then wl=fcount
- for i=id to wl+id
+ for i=id to min(fcount-1,id+wl)
   if (fname$(i,0)<>"") then
   font 7,2
   fh=mm.info(fontheight)
@@ -95,7 +94,7 @@ text w/2,h-11,"ESC : Quit       ENTER or RIGHT : Play",c
   sel=sel+1
   if sel>wl then
    id=id+1
-   box 0,toph,w,h,1,green,black
+   box 0,fht+10,w,h,1,green,black
   endif
  endif
  ' UP
@@ -123,7 +122,7 @@ sub playerview(f$,s$)
   text 160,140,s$+"K > 192K",c
   text 160,180,"FILE TOO BIG ",c
   pause 1500
-  filesview()
+  exit sub
  endif
  ' now playing
  mute(0)
@@ -153,7 +152,7 @@ sub playerview(f$,s$)
   ' ESC or LEFT
   if k$=chr$(27) or k$=chr$(130) then
    play stop
-   filesview()
+   exit sub
   endif
   ' ENTER
   if k$=chr$(13) then
@@ -248,4 +247,17 @@ sub showbat()
  font 7,1
  bat$=str$(mm.info(battery))+"%"
  text w,0,bat$,r
+end sub
+
+sub intro()
+ font 8,4
+ fh=mm.info(fontheight)
+ box 0,0,w,fh+10,2,green,grey
+ color green,grey
+ text w/2,6,"PicoCalc MOD Player",c
+ color green,black
+ text w/2,h/2,"LOADING...",c
+ font 8,2
+ fh=mm.info(fontheight)
+ text w/2,h-fh,"v0.1 made by Guidouil",c
 end sub
