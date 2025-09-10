@@ -1,5 +1,13 @@
 # PicoCalc Stuffs I coded in MMBasic (for now)
 
+## chain
+
+A little demo stolen from [this page](https://www.thebackshed.com/forum/ViewTopic.php?TID=17161&P=2#227043) that looks like this
+
+![Chain screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/chain.bmp)
+
+Launch it using `run "chain` command.
+
 ## cmatrix
 
 A wanabe clone of the famous linux command screensaver: `cmatrix`.
