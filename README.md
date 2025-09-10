@@ -36,6 +36,8 @@ Launch it using `run "nodp` command.
 
 A little tool to show rgb colors and corresponding code. Two command are available when running `a` for again and `s` to save a screenshot, any other key to quit.
 
+![RGB screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/rgb.bmp)
+
 Launch it using `run "rgb` command.
 
 ## w95
