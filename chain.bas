@@ -4,7 +4,7 @@
 option angle degrees
 cls
 r=60:p=18:g=r+p
-for w=0 to 550 step 93
+for w=0 to 420 step 93
  s=sin(w+33)
  c=cos(w+33)
  for x=0 to g
@@ -32,3 +32,11 @@ next
 ' that was a pain to copy ^_^;
 line 0,0,0,320,1,rgb(0,0,0)
 line 320,0,320,320,1,rgb(0,0,0)
+do
+ ki$=inkey$
+ if ki$="s" then
+  save image "chain.bmp"
+ else
+  if ki$<>"" then cls :end
+ endif
+loop
