@@ -1,5 +1,18 @@
 # PicoCalc Stuffs I coded in MMBasic (for now)
 
+## DEMO
+
+A 130 seconds demo with sound and many annimations gathered mostly on [TheBackShed](https://www.thebackshed.com/forum/ViewTopic.php?TID=17161&P=1).
+You also need the file `laamaa.mod` in the same directory as `demo.bas` to have it working properly.
+This was tested on a Raspberry Pico2W overclocked at 252MHz.
+
+Requirements
+- A PicoCalc (obvously)
+- Having the modf buffer activated. **This will format your A: drive, so do backup if you store some stuff as autorun.** To enable the buffer use this command `option modbuff enable`. You can disable it latter on with `option modbuff disable`
+- Running on a Raspberry Pico2W overclocked at 252MHz. You can overclock with the following command `option cpluclock 252000` (also it might run on a Pico1 on regular frequency since it's only MMBasic without 3D instructions in the code.
+
+Launch it using `run "demo` command.
+
 ## chain
 
 A little demo stolen from [this page](https://www.thebackshed.com/forum/ViewTopic.php?TID=17161&P=2#227043) that looks like this
