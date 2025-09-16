@@ -29,6 +29,12 @@ dim fi(NF-1),fj(NF-1),fz(NF-1),ord%(NF-1)
 dim ax%(3),ay%(3)
 dim fb_bg,fb_front,wallx0, wally0, wallx1, wally1, floorY
 
+' motion
+bx=W/2: by=H/2
+vx=8.0: vy=4.7
+rad = SCL*(FOVC/ZOFF)
+vr=.35
+
 ' --- FB setup ---
 framebuffer create
 framebuffer write f
@@ -51,17 +57,11 @@ for i=0 to NU-1
   next
 next
 
-' motion
-bx=W/2: by=H/2
-vx=8.0: vy=4.7
-rad = SCL*(FOVC/ZOFF)
-vr=.35
-
 do
   cls rgb(64,64,64)
 
-  ry=ry+vr   ' Y only
   ' rotate+project (Y only)
+  ry=ry+vr
   for i=0 to NU-1
     for j=0 to NV-1
       xx = mx(i,j)*cos(ry)-mz(i,j)*sin(ry)
@@ -85,16 +85,6 @@ do
     i=fi(k): j=fj(k)
     ip=(i+1) mod NU: jp=j+1
     fz(k)=(vz3(i,j)+vz3(ip,j)+vz3(ip,jp)+vz3(i,jp))/4
-  next
-
-  ' insertion sort back->front
-  for i=0 to NF-2
-    k=ord%(i): zzm=fz(k): j=i-1
-    do while j>=0
-      if fz(ord%(j))<=zzm then exit do
-      ord%(j+1)=ord%(j): j=j-1
-    loop
-    ord%(j+1)=k
   next
 
   ' --- wall shadow behind ball
@@ -123,14 +113,11 @@ do
     ax%(3)=int(sx(i,jp)) : ay%(3)=int(sy(i,jp))
 
     isRed=((i+j) and 1)=0
-    shade=(fz(ord%(k))+1)/2
-    if shade<0 then shade=0
-    if shade>1 then shade=1
 
     if isRed then
-      rr=220: gg=40: bb=40
+      rr=255: gg=0: bb=0
     else
-      rr=245: gg=245: bb=245
+      rr=255: gg=255: bb=255
     endif
 
     ' seam/viewport guards to avoid popping
@@ -154,5 +141,5 @@ do
   bx=bx+vx: by=by+vy
 
   framebuffer copy f,n
-  'pause 16
+
 loop until inkey$<>""
