@@ -16,6 +16,12 @@ Requirements
 
 Launch it using `run "demo` command.
 
+## Boing
+
+An attempt to recreate the famous [Amiga Demo from 1984](https://www.youtube.com/watch?v=YlAhRJjOhDg). Vibe coded by GPT5 and adapted/fixed by me.
+
+Launch it using `run "boing` command.
+
 ## chain
 
 A little demo stolen from [this page](https://www.thebackshed.com/forum/ViewTopic.php?TID=17161&P=2#227043) that looks like this
