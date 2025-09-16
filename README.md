@@ -14,13 +14,13 @@ Requirements
 - Having the modf buffer activated. **This will format your A: drive, so do backup if you store some stuff as autorun.** To enable the buffer use this command `option modbuff enable`. You can disable it latter on with `option modbuff disable`
 - Running on a Raspberry Pico2W overclocked at 252MHz. You can overclock with the following command `option cpluclock 252000` (also it might run on a Pico1 on regular frequency since it's only MMBasic without 3D instructions in the code.
 
-Launch it using `run "demo` command.
+Launch it using `run 'demo` command.
 
 ## Boing
 
 An attempt to recreate the famous [Amiga Demo from 1984](https://www.youtube.com/watch?v=YlAhRJjOhDg). Vibe coded by GPT5 and adapted/fixed by me.
 
-Launch it using `run "boing` command.
+Launch it using `run 'boing` command.
 
 ## chain
 
@@ -28,19 +28,19 @@ A little demo stolen from [this page](https://www.thebackshed.com/forum/ViewTopi
 
 ![Chain screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/chain.bmp)
 
-Launch it using `run "chain` command.
+Launch it using `run 'chain` command.
 
 ## cmatrix
 
 A wanabe clone of the famous linux command screensaver: `cmatrix`.
 
-Launch it using `run "cmatrix` command.
+Launch it using `run 'cmatrix` command.
 
 ## DVD
 
 A wanabe clone of the infamous DVD players screensaver.
 
-Launch it using `run "dvd` command.
+Launch it using `run 'dvd` command.
 
 ## MODP
 
@@ -52,7 +52,7 @@ It requires 2 things
 
 The player can only play file up to 192k
 
-Launch it using `run "nodp` command.
+Launch it using `run 'nodp` command.
 
 ## RGB
 
@@ -60,10 +60,10 @@ A little tool to show rgb colors and corresponding code. Two command are availab
 
 ![RGB screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/rgb.bmp)
 
-Launch it using `run "rgb` command.
+Launch it using `run 'rgb` command.
 
 ## w95
 
 A windows 95 emulator, needs the `w95.wav` file to be in the same directory as the `w95.bas` file to work "properly".
 
-Launch it using `run "w95` command.
+Launch it using `run 'w95` command.
