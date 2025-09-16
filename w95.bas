@@ -1,43 +1,47 @@
 'w95.bas
-Play wav "w95.wav"
-bl=RGB(0,0,255)
-wh=RGB(255,255,255)
-gr=RGB(123,123,123)
-b=RGB(0,0,0)
-For i=0 To 30
- CLS gr:CLS b: CLS gr
-Next i
-CLS bl
-Font 2
-Color bl,wh
-Text 110,70," Windows "
-Font 7
-Color wh,bl
-Text 10,110,"Am error has occured. To continue:"
-Text 10,130,"Press Enter to return to Windows, or"
-Text 10,150,"Press CTL+ALT+DEL to restart your computer. If you"
-Text 10,160,"do this, you will lose any unsaved information"
-Text 10,170,"in all open applications."
-Text 10,190,"Error: OE : 016F : BFF983D4"
-Text 90,220,"Press any key to continue"
-Do
- If Inkey$<>"" Then turnoff()
- Line 245,226,250,226,,wh
- Pause 500
- Line 245,226,250,226,,bl
- Pause 500
-Loop
+play wav "w95.wav"
+bl=rgb(20,56,139)
+wh=rgb(255,255,255)
+gr=rgb(196,196,196)
+g=rgb(0,127,127)
+b=rgb(0,0,0)
+for i=0 to 16
+ cls gr:cls b:cls gr
+next i
+for j=0 to 16
+ cls g:cls gr:cls g
+next j
+cls bl
+font 2
+color bl,wh
+text 110,70," Windows "
+font 7
+color wh,bl
+text 10,110,"Am error has occured. To continue:"
+text 10,130,"Press Enter to return to Windows, or"
+text 10,150,"Press CTL+ALT+DEL to restart your computer. If you"
+text 10,160,"do this, you will lose any unsaved information"
+text 10,170,"in all open applications."
+text 10,190,"Error: OE : 016F : BFF983D4"
+text 90,220,"Press any key to continue"
+do
+ if inkey$<>"" then turnoff()
+ line 245,226,250,226,,wh
+ pause 500
+ line 245,226,250,226,,bl
+ pause 500
+loop
 
-Sub turnoff()
- CLS b
- Font 2,3
- Color RGB(150,0,0),b
- Text 10,10,"It's now"
- Text 25,70,"safe to"
- Text 10,130,"turn off"
- Text 90,190,"your"
- Text 5,250,"computer."
- Do
-  If Inkey$<>"" Then CLS b:End
- Loop
-End Sub
+sub turnoff()
+ cls b
+ font 2,3
+ color rgb(226,118,64),b
+ text 10,10,"It's now"
+ text 25,70,"safe to"
+ text 10,130,"turn off"
+ text 90,190,"your"
+ text 5,250,"computer."
+ do
+  if inkey$<>"" then cls b:end
+ loop
+end sub
