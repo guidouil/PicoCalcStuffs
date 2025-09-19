@@ -43,6 +43,12 @@ A wanabe clone of the infamous DVD players screensaver.
 
 Launch it using `run "dvd` command.
 
+## Flappy
+
+A clone of FlappyBird vibe coded with GPT, need rework, added framebuffer to make it playable.
+
+Launch it using `run "flappy` command.
+
 ## MODP
 
 My most ambitious mmbasic programm yet, 5k to make a `.mod` files music player / sampler. Tested on Pico2W only.
