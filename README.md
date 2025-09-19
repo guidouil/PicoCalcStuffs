@@ -49,6 +49,14 @@ A clone of FlappyBird vibe coded with GPT, need rework, added framebuffer to mak
 
 Launch it using `run "flappy` command.
 
+## Keyb
+
+A keyboard testing app coded 100% on the picocalc keyboard.
+
+![Keyb screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/keyb.bmp)
+
+Launch it using `run "keyb` command.
+
 ## MODP
 
 My most ambitious mmbasic programm yet, 5k to make a `.mod` files music player / sampler. Tested on Pico2W only.
