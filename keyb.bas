@@ -12,22 +12,22 @@ dim l4$(9)=("Q","W","E","R","T","Y","U","I","O","P")
 dim l5$(8)=("A","S","D","F","G","H","J","K","L")
 dim l6$(8)=("Z","X","C","V","B","N","M",",",".")
 dim l7$(1)=(";","'")
-dim xl%(2)=(10,50,10)
-dim yl%(2)=(90,120,150)
-dim xr%(2)=(90,50,90)
-dim yr%(2)=(90,120,150)
-dim xu%(2)=(10,50,90)
-dim yu%(2)=(90,120,90)
-dim xd%(2)=(10,50,90)
-dim yd%(2)=(150,120,150)
+dim xl%(2)=(10,52,10)
+dim yl%(2)=(90,127,164)
+dim xr%(2)=(94,52,94)
+dim yr%(2)=(90,127,164)
+dim xu%(2)=(10,52,94)
+dim yu%(2)=(90,127,90)
+dim xd%(2)=(10,52,94)
+dim yd%(2)=(164,127,164)
 g=rgb(0,255,0)
 b=rgb(0,0,0)
 do
  k$=ucase$(inkey$)
- darrow 149,130,xl%(), yl%(),25,110,k$
- darrow 148,131,xr%(), yr%(),75,110,k$
- darrow 146,128,xu%(), yu%(),50,92,k$
- darrow 147,129,xd%(), yd%(),50,126,k$
+ darrow 149,130,xl%(), yl%(),25,127,k$
+ darrow 148,131,xr%(), yr%(),80,127,k$
+ darrow 146,128,xu%(), yu%(),52,108,k$
+ darrow 147,129,xd%(), yd%(),52,150,k$
  dtopline v0$(),l0$(),4,90,k$,90
  dtopline v1$(),l1$(),4,115,k$,90
  dline l2$(),6,140,k$,90
@@ -75,9 +75,9 @@ end sub
 
 sub darrow la%,va%,xx%(),yy%(),x%,y%,k$
  polygon 3,xx%(),yy%(),g,b
- text x%,y%,chr$(la%),c,1,2
+ text x%,y%,chr$(la%),cm,1,2
  if k$=chr$(va%) then
   polygon 3,xx%(),yy%(),g,g
-  text x%,y%,chr$(la%),c,1,2,b,g
+  text x%,y%,chr$(la%),cm,1,2,b,g
  endif
 end sub
