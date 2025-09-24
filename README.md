@@ -51,7 +51,7 @@ Launch it using `run "flappy` command.
 
 ## ilu
 
-It's just an illusion, is your screen flikering? is any line moving? Maybe ¯\_(ツ)_/¯
+It's just an illusion, is your screen flikering? is any line moving? Maybe ¯\\_(ツ)_/¯
 
 ![ilu screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/ilu.bmp)
 
