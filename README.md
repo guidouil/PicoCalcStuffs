@@ -49,6 +49,14 @@ A clone of FlappyBird vibe coded with GPT, need rework, added framebuffer to mak
 
 Launch it using `run "flappy` command.
 
+## ilu
+
+It's just an illusion, is your screen flikering? is any line moving? Maybe ¯\_(ツ)_/¯
+
+![ilu screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/ilu.bmp)
+
+Launch it using `run "ilu` command.
+
 ## Keyb
 
 A keyboard testing app coded 100% on the picocalc keyboard.
