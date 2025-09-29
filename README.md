@@ -77,6 +77,15 @@ The player can only play file up to 192k
 
 Launch it using `run "nodp` command.
 
+## Paint
+
+A small image maker in 40x40 tiles with basic colors for all the pixels lovers.
+
+![Paint screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/paint.bmp)
+
+Launch it using `run "paint` command.
+
+
 ## RGB
 
 A little tool to show rgb colors and corresponding code. Two command are available when running `a` for again and `s` to save a screenshot, any other key to quit.
@@ -84,6 +93,12 @@ A little tool to show rgb colors and corresponding code. Two command are availab
 ![RGB screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/rgb.bmp)
 
 Launch it using `run "rgb` command.
+
+## Starfield
+
+A screensaver inspired by win95 and partialy vibe coded with a GPTs
+
+Launch it using `run "starfield` command.
 
 ## w95
 
