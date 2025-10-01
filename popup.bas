@@ -24,7 +24,7 @@ text 160,13," POP UP ",ct
 end sub
 sub popup
 rbox 50,100,220,100,6,gr,bl
-line 52,101,267,101,4
+line 52,101,268,101,3
 text 160,120,"Did you mean dialog?",ct,4
 text 115,162,"YES",ct,2
 rbox 90,160,50,25,4,gr
@@ -54,8 +54,8 @@ popup
 do
  k$=inkey$
  if k$="s" then save image "popup.bmp"
- if k$="y" or k$="Y" then yes
- if k$="n" or k$="N" then no
+ if k$="y" or k$="Y" or k$=chr$(130) then yes
+ if k$="n" or k$="N" or k$=chr$(131) then no
  if k$<>"" then hep
  if k$=chr$(27) then cls :end
 loop
