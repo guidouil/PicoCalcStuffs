@@ -87,7 +87,7 @@ Launch it using `run "paint` command.
 
 ## Popup
 
-A little test to make UI mostly with characters ans some rbox
+A little test to make UI mostly with print characters, also some rbox and text
 
 ![Popup screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/popup.bmp)
 
