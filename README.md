@@ -85,6 +85,13 @@ A small image maker in 40x40 tiles with basic colors for all the pixels lovers.
 
 Launch it using `run "paint` command.
 
+## Popup
+
+A little test to make UI mostly with characters ans some rbox
+
+![Popup screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/popup.bmp)
+
+Launch it using `run "popup` command.
 
 ## RGB
 
