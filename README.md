@@ -87,7 +87,7 @@ Launch it using `run "paint` command.
 
 ## Popup
 
-A little test to make UI mostly with print characters, also some rbox and text
+A little test to make UI mostly with print characters, also some rbox and text.
 
 ![Popup screenshot](https://raw.githubusercontent.com/guidouil/PicoCalcStuffs/refs/heads/main/popup.bmp)
 
@@ -103,7 +103,7 @@ Launch it using `run "rgb` command.
 
 ## Starfield
 
-A screensaver inspired by win95 and partialy vibe coded with a GPTs
+A screensaver inspired by win95 and partialy vibe coded with a GPTs.
 
 Launch it using `run "starfield` command.
 
@@ -112,3 +112,9 @@ Launch it using `run "starfield` command.
 A windows 95 emulator, needs the `w95.wav` file to be in the same directory as the `w95.bas` file to work "properly".
 
 Launch it using `run "w95` command.
+
+## win10
+
+The windows 10 loading screen with a twist.
+
+Launch it using `run "win10` command.
