@@ -16,6 +16,9 @@ framebuffer write f
 sub cel l,c,cc
  box l*w,c*w,w,w,0,black,cc
 end sub
+sub sel l,c
+ box l*w,c*w,w,w,1,green
+end sub
 sub ds d%()
  for xx=0 to b
   for yy=0 to b
@@ -27,9 +30,9 @@ end sub
 do
  cls
  ds d%()
- cel x,y,green
+ sel x,y
  k$=inkey$
- if k$=chr$(27) then cls :end 'esc
+ 'if k$=chr$(27) then cls :end 'esc
  if k$=chr$(128) and y>0 then y=y-1
  if k$=chr$(129) and y<b then y=y+1
  if k$=chr$(130) and x>0 then x=x-1
